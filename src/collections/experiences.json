@@ -1,0 +1,23 @@
+[
+	{
+"dates": "Mayo 2023 · Septiembre 2024",
+		"role": "Desarrollador De Software",
+		"company": "Sonda S.A.",
+		"description": "Responsable del desarrollo de componentes para el ERP Fin700, utilizando HTML, CSS, Typescript y React JS, Tambien Estuve a Cargo de una aplicacion nativa para Android con Kotlin y Retrofit. Diseñando componentes y módulos para una app Android nativa integrando con API Rest. Aplicando Arquitectura MVVM y Clean Architecture  diseñando layauts con Material Design.",
+		"logo": "/assets/images/experiences/fta.ico"
+	},
+	{
+		"dates": "Enero 2022 · Julio 2022",
+		"role": "Practica Desarrollador Mobile Android (Kotlin)",
+		"company": "Red Bus Urbano S.A.",
+		"description": "Nivelacion Conocimientos en Android Studio, Kotlin, Retrofit, Room, Coroutines, LiveData, ViewModel, Navigation, Material Design, Google Maps, Firebase, Git-GitHub, Clean Architecture, MVVM, Inyección de Dependencias, Testing, entre otros.",
+		"logo": "/assets/images/experiences/yoho.ico"
+	},
+	{
+		"dates": "Junio 2021 · Enero 2022",
+		"role": "Desarrollador JavaScript – MERN Freelance",
+		"company": "Consultoría ACL Tecnología",
+		"description": "Desarrollo de proyectos web con JavaScript (ES6), nivelandome en javascript, Node.js, Express, MongoDB, Mongoose, React, Redux, Material-UI, Bootstrap, Git-GitHub, entre otros.",
+		"logo": "/assets/images/experiences/wulian.ico"
+	}
+]

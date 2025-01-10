@@ -1,0 +1,20 @@
+[
+	{
+		"name": "Turismo Aventura ",
+		"description": "Landing Page de turismo Moderno para una empresa de turismo aventura.",
+		"image": "/assets/images/projects/caminoAventura.jpg",
+		"url": "https://www.caminoaventura.cl/"
+	},
+	{
+		"name": "WebSockets",
+		"description": "Chat en tiempo real con websockets. nodejs, express, socket.io",
+		"image": "/assets/images/projects/dns.surf.png",
+		"url": "https://github.com/Gonstrr/WebSockets-Nodejs"
+	},
+	{
+		"name": "Tienda Store",
+		"description": "Tienda para subir tus productos y venderlos. kotlin android",
+		"image": "/assets/images/projects/html.zone.png",
+		"url": "https://github.com/Gonstrr/Tienda_o_Stores"
+	}
+]
