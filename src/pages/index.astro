@@ -26,7 +26,8 @@ import Layout from "../layouts/main.astro";
           Puedo ayudarte con:
         </p>
         <ul
-          class="py-2 space-y-[3px] text-sm list-disc list-inside text-neutral-500 dark:text-neutral-400"
+          class="py-2 space-y-[3px] text-sm list-disc list-inside text-neutral-500 
+                 dark:text-neutral-400 md:text-base md:space-y-2 md:py-4 "
         >
           <li>JavaScript Development</li>
           <li>Android Development</li>
@@ -40,7 +41,7 @@ import Layout from "../layouts/main.astro";
           <li>GitHub</li>
           
         </ul>
-        <Button text="Sigueme en GitHub" link="https://github.com/Gonstrr" />
+        <Button  text="Sigueme en GitHub" link="https://github.com/Gonstrr" />
       </div>
       <div
         class="relative justify-end hidden w-full mt-10 md:flex md:pl-10 md:w-1/2 md:mt-0 md:translate-y-4 xl:translate-y-">
@@ -52,14 +53,17 @@ import Layout from "../layouts/main.astro";
               class="relative z-20 flex items-center justify-center w-full h-full text-2xl border-8 border-white rounded-full dark:border-neutral-950 bg-neutral-100 dark:bg-neutral-900"
             >
               <span
-                class="flex items-center justify-center w-full h-full bg-white border border-dashed rounded-full dark:bg-neutral-950 border-neutral-300 dark:border-neutral-700"
+                class="flex items-center justify-center w-full h-full bg-white border border-dashed 
+                rounded-full dark:bg-neutral-950 border-neutral-300 dark:border-neutral-700"
                 >👋</span
               >
             </span>
           </div>
-          <div class="relative z-30 w-full h-full lg:h-[420px] translate-x-0 translate-y-0">
+          <div class="relative z-30 w-full h-full lg:h-[420px] translate-x-0 translate-y-0 border border-dashed rounded-2xl bg-gradient-to-r dark:from-neutral-950 
+                      dark:via-black dark:to-neutral-950 from-white via-neutral-50 to-white  border-neutral-300 dark:border-neutral-700
+                      border-neutral-300 dark:border-neutral-700 rounded-2xl "> 
             <img
-              src="https://avatars.githubusercontent.com/u/72054804?s=400&u=819deae9a66a53b6a97fdf566aaa94d0b78bd7bb&v=4"
+              src="../assets/img.jpg"
               alt="Imagen de portada"
               loading="eager"
               decoding="auto"
@@ -69,7 +73,8 @@ import Layout from "../layouts/main.astro";
           
           
           <div
-            class="absolute bottom-0 right-0 z-20 w-full h-full lg:h-[420px] translate-x-0 -translate-y-px border border-dashed rounded-2xl bg-gradient-to-r dark:from-neutral-950 dark:via-black dark:to-neutral-950 from-white via-neutral-50 to-white border-neutral-300 dark:border-neutral-700"
+            class="absolute bottom-0 right-0 z-20 w-full h-full lg:h-[420px] translate-x-0 -translate-y-px border 
+                   border-dashed rounded-2xl bg-gradient-to-r dark:from-neutral-950 dark:via-black dark:to-neutral-950 from-white via-neutral-50 to-white border-neutral-300 dark:border-neutral-700"
           >
           </div>
         </div>

@@ -3,16 +3,19 @@ import menus from "../collections/menu.json";
 import Logo from "../components/logo.astro";
 ---
 
-<div class="relative w-full h-20 opacity-0 pointer-events-none"></div>
+<div class="relative w-full h-20 opacity-0 pointer-events-none  "></div>
 <header id="header" class="absolute top-0 z-50 w-full h-20">
   <div
-    class="flex items-center justify-between h-full max-w-5xl pl-6 pr-4 mx-auto border-b border-l-0 border-r-0 border-transparent select-none lg:border-r lg:border-l lg:rounded-b-xl"
+    class="flex items-center justify-between h-full max-w-5xl pl-6 pr-4 mx-auto border-b 
+          border-l-0 border-r-0 border-transparent select-none lg:border-r lg:border-l 
+          lg:rounded-b-xl lg:shadow-lg lg:dark:border-neutral-800 "
   >
     <Logo />
     <div
       id="mobileMenuBackground"
       onclick="closeMobileMenu()"
-      class="fixed inset-0 z-20 hidden w-screen h-screen duration-300 ease-out bg-white/90 dark:bg-neutral-950/90"
+      class="fixed inset-0 z-20 hidden w-screen h-screen 
+            duration-300 ease-out bg-white/90 dark:bg-neutral-950/90 sm:hidden"
     >
     </div>
     <nav
