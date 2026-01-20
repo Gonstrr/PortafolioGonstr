@@ -8,6 +8,14 @@
   border-radius: 30px;
 }
 
+/* Line clamp utilities */
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
 #sun {
   transform: translate3d(0, 0px, 0);
 }

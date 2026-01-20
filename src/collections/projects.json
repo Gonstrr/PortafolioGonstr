@@ -1,5 +1,23 @@
 [
 	{
+		"name": "Santander OneApp",
+		"description": "Aplicación bancaria móvil desarrollada con Kotlin y Jetpack Compose. Implementación de arquitectura modular MVVM, inyección de dependencias, integración de SDKs de seguridad y comunicación entre módulos.",
+		"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR810UmjWIYwyJ-recnd0PfkhILANF5y34qCQ&s",
+		"url": "https://play.google.com/store/apps/details?id=com.santander.app"
+	},
+	{
+		"name": "SONDA - Fin700 ERP",
+		"description": "Desarrollo de soluciones para el sistema ERP Fin700. Aplicaciones móviles Android con Kotlin, componentes web con TypeScript y React.js, implementación de MVVM, APIs REST con Retrofit, y distribución via Firebase y Google Play Store.",
+		"image": "/assets/images/experiences/sonda.jpg",
+		"url": "https://www.sonda.com"
+	},
+	{
+		"name": "Red Bus Urbano - Android App",
+		"description": "Práctica profesional desarrollando aplicación Android nativa. Consolidación de conocimientos en Android Studio, MVVM, layouts, APIs REST, Git y Firebase para sistema de transporte urbano.",
+		"image": "/assets/images/experiences/redbusUrbano.jpg",
+		"url": "https://www.red.cl/"
+	},
+	{
 		"name": "Turismo Aventura ",
 		"description": "Landing Page de turismo Moderno para una empresa de turismo aventura.",
 		"image": "/assets/images/projects/caminoAventura.jpg",

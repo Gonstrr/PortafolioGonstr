@@ -1,23 +1,38 @@
 [
 	{
+		"dates": "Febrero 2025 - Actualidad",
+		"role": "Mobile Developer",
+		"company": "Banco Santander (42Labs)",
+		"description": "Desarrollo de aplicaciones Android nativas con Kotlin y Jetpack Compose para la nueva App Santander OneApp. Implementación de arquitectura modular MVVM, inyección de dependencias y comunicación entre módulos. Integración de SDKs de seguridad y registro biométrico. Desarrollo de módulos reutilizables e integración de proyectos web con Ionic, Capacitor y Angular. Gestión de pipelines CI/CD con Bitrise, análisis estático con Detekt, y colaboración internacional con equipos distribuidos entre Chile y España.",
+		"logo": "/assets/images/experiences/santander.png"
+	},
+	{
 "dates": "Mayo 2023 · Septiembre 2024",
 		"role": "Desarrollador De Software",
 		"company": "Sonda S.A.",
 		"description": "Responsable del desarrollo de componentes para el ERP Fin700, utilizando HTML, CSS, Typescript y React JS, Tambien Estuve a Cargo de una aplicacion nativa para Android con Kotlin y Retrofit. Diseñando componentes y módulos para una app Android nativa integrando con API Rest. Aplicando Arquitectura MVVM y Clean Architecture  diseñando layauts con Material Design.",
-		"logo": "/assets/images/experiences/fta.ico"
+		"logo": "/assets/images/experiences/sonda.jpg"
 	},
 	{
 		"dates": "Enero 2022 · Julio 2022",
 		"role": "Practica Desarrollador Mobile Android (Kotlin)",
 		"company": "Red Bus Urbano S.A.",
 		"description": "Nivelacion Conocimientos en Android Studio, Kotlin, Retrofit, Room, Coroutines, LiveData, ViewModel, Navigation, Material Design, Google Maps, Firebase, Git-GitHub, Clean Architecture, MVVM, Inyección de Dependencias, Testing, entre otros.",
-		"logo": "/assets/images/experiences/yoho.ico"
+		"logo": "/assets/images/experiences/redbusUrbano.jpg"
 	},
 	{
 		"dates": "Junio 2021 · Enero 2022",
 		"role": "Desarrollador JavaScript – MERN Freelance",
 		"company": "Consultoría ACL Tecnología",
 		"description": "Desarrollo de proyectos web con JavaScript (ES6), nivelandome en javascript, Node.js, Express, MongoDB, Mongoose, React, Redux, Material-UI, Bootstrap, Git-GitHub, entre otros.",
-		"logo": "/assets/images/experiences/wulian.ico"
+		"logo": "/assets/images/experiences/jeje.png"
+	},
+	{
+		"dates": "Marzo 2021 · Mayo 2021",
+		"role": "Desarrollador Web Freelance",
+		"company": "Freelance",
+		"description": "Desarrollo de páginas web estáticas y dinámicas con HTML5, CSS3, JavaScript (ES6), Bootstrap, Git-GitHub, entre otros.",
+		"logo": "/assets/images/experiences/jeje.png"
+
 	}
 ]

@@ -1,0 +1,83 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+# Security Policy - LogsGonstr Portfolio
+# 
+# If you discover a security vulnerability within this portfolio website,
+# please report it responsibly following the guidelines below.
+#
+# Effective Date: 2026-01-20
+# Last Updated: 2026-01-20
+# Version: 1.0-LogsGonstr
+
+Contact: mailto:security@gonstr.dev
+Contact: https://github.com/Gonstrr
+Contact: https://www.linkedin.com/in/gonzalo-andres-salas-tranolao/
+
+Preferred-Languages: es, en
+
+Canonical: https://portafolio-gonstr.vercel.app/.well-known/security.txt
+
+Policy: https://portafolio-gonstr.vercel.app/security-policy
+
+# Scope
+# This security policy applies to:
+# - Main website: portafolio-gonstr.vercel.app
+# - All subdomains and related assets
+# - Source code repository: github.com/Gonstrr
+
+# What to Report
+# Please report any security issues including but not limited to:
+# - Cross-Site Scripting (XSS)
+# - SQL Injection
+# - Cross-Site Request Forgery (CSRF)
+# - Server-Side Request Forgery (SSRF)
+# - Authentication/Authorization bypass
+# - Information disclosure
+# - Remote code execution
+# - Any other security vulnerability
+
+# What NOT to Report
+# - Missing security headers (already implemented)
+# - Social engineering attacks
+# - Physical attacks
+# - Denial of Service attacks
+# - Issues in third-party services outside our control
+
+# Response Timeline
+# - Acknowledgment: Within 48 hours
+# - Initial assessment: Within 5 business days
+# - Resolution: Varies by severity, typically 30 days max
+
+# Responsible Disclosure
+# Please give us reasonable time to address the issue before public disclosure.
+# We commit to keeping you informed of our progress.
+
+# Recognition
+# We maintain a security researchers hall of fame for valid reports.
+
+Expires: 2026-12-31T23:59:59.999Z
+
+# PGP Key Information
+# Key-ID: LogsGonstr-Security-2026
+# Fingerprint: [To be generated]
+
+# Additional Security Measures Implemented:
+# - Content Security Policy (CSP)
+# - HTTP Security Headers
+# - Secure Cookie Configuration  
+# - Input Sanitization
+# - Rate Limiting
+# - Security Monitoring with LogsGonstr
+# - Regular Security Audits
+# - Dependency Vulnerability Scanning
+
+-----BEGIN PGP SIGNATURE-----
+
+[LogsGonstr Security Team - 2026]
+Portfolio Security Policy v1.0
+Generated: 2026-01-20T00:00:00Z
+Environment: Production
+Security Level: High
+
+-----END PGP SIGNATURE-----

@@ -1,0 +1,48 @@
+---
+import { getCollection } from "astro:content";
+import Button from "../button.astro";
+
+try {
+  const allPosts = await getCollection("post");
+  console.log("Posts cargados:", allPosts.length);
+  
+  // Debugging - mostrar algunos posts
+  allPosts.slice(0, 3).forEach(post => {
+    console.log("Post:", post.data.title, "Fecha:", post.data.dateFormatted);
+  });
+} catch (error) {
+  console.error("Error cargando posts:", error);
+}
+
+const allPosts = await getCollection("post");
+const recentPosts = allPosts.slice(0, 3);
+---
+
+<section class="max-w-4xl mx-auto px-7 lg:px-0 py-14 lg:py-20">
+  <div class="text-center mb-12">
+    <h2
+      class="text-2xl font-bold leading-10 tracking-tight text-neutral-900 
+             dark:text-neutral-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14"
+    >
+      Mis Escritos
+    </h2>
+    <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400 sm:text-lg md:text-xl lg:px-20">
+      Reflexiones sobre tecnología y desarrollo. Total de posts: {allPosts.length}
+    </p>
+  </div>
+
+  <div class="space-y-6">
+    {recentPosts.map((post) => (
+      <div class="p-4 border rounded-lg">
+        <h3 class="text-lg font-bold">{post.data.title}</h3>
+        <p class="text-sm text-gray-600">{post.data.dateFormatted}</p>
+        <p>{post.data.description}</p>
+        {post.data.category && <span class="bg-blue-100 px-2 py-1 rounded text-sm">{post.data.category}</span>}
+      </div>
+    ))}
+  </div>
+
+  <div class="flex items-center justify-center w-full pt-10">
+    <Button text="Ver todos mis escritos" link="/posts" />
+  </div>
+</section>

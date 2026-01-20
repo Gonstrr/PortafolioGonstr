@@ -1,0 +1,78 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "astro check && astro build",
+  "outputDirectory": "dist",
+  "functions": {
+    "src/pages/**/*.astro": {
+      "maxDuration": 30
+    }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "X-DNS-Prefetch-Control",
+          "value": "on"
+        },
+        {
+          "key": "X-LogsGonstr-Timestamp",
+          "value": "2026-01-20"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*\\.(html|json|txt|xml))",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/(.*\\.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot))",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/.well-known/security.txt",
+      "destination": "/security.txt"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/admin",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-admin",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/login",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
+  "trailingSlash": false,
+  "cleanUrls": true,
+  "regions": ["cdg1", "dfw1", "iad1"],
+  "crons": []
+}
