@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/post.astro
 title: Mi Experiencia Desarrollando el ERP Fin700 con React y TypeScript
 description: Cómo desarrollé componentes para el sistema ERP bancario Fin700 utilizando React, TypeScript y arquitectura modular, junto con una aplicación Android nativa
 dateFormatted: Septiembre 20, 2024

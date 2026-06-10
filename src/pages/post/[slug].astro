@@ -1,16 +1,105 @@
 ---
 import { getCollection } from "astro:content";
+import Layout from "../../layouts/main.astro";
+
+export const prerender = true;
 
 export async function getStaticPaths() {
 	const postEntries = await getCollection("post");
 	return postEntries.map((entry) => ({
-		params: { slug: entry.slug },
+		params: { slug: entry.id },
 		props: { entry },
 	}));
 }
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const renderedHtml = entry.rendered?.html ?? '';
+const { title, description, dateFormatted, category, tags, readTime, difficulty } = entry.data;
 ---
 
-<Content />
+<Layout title={`${title} - Gonzalo Salas Tranolao`}>
+  <section class="relative z-20 max-w-4xl mx-auto my-12 px-7 lg:px-0">
+    <article class="prose prose-lg max-w-none dark:prose-invert">
+      <header class="not-prose mb-8">
+        <div class="flex flex-col gap-4 mb-6">
+          {category && (
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 w-fit">
+              {category}
+            </span>
+          )}
+
+          <h1 class="text-3xl font-bold leading-tight tracking-tight text-neutral-900 dark:text-neutral-100 sm:text-4xl md:text-5xl">
+            {title}
+          </h1>
+
+          <p class="text-xl text-neutral-600 dark:text-neutral-400 leading-relaxed">
+            {description}
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 text-sm text-neutral-500 dark:text-neutral-400">
+            <time datetime={dateFormatted} class="flex items-center gap-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              {dateFormatted}
+            </time>
+
+            {readTime && (
+              <span class="flex items-center gap-1">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                {readTime}
+              </span>
+            )}
+
+            {difficulty && (
+              <span class="flex items-center gap-1">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+                {difficulty}
+              </span>
+            )}
+          </div>
+
+          {tags && tags.length > 0 && (
+            <div class="flex flex-wrap gap-2">
+              {tags.map((tag) => (
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-neutral-100 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200">
+                  #{tag}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
+      </header>
+
+      <div class="prose prose-neutral dark:prose-invert max-w-none" set:html={renderedHtml} />
+    </article>
+
+    <nav class="mt-12 pt-8 border-t border-neutral-200 dark:border-neutral-800">
+      <div class="flex items-center justify-between">
+        <a
+          href="/posts"
+          class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+          Volver a todos los posts
+        </a>
+
+        <a
+          href="#top"
+          class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+          </svg>
+          Ir arriba
+        </a>
+      </div>
+    </nav>
+  </section>
+</Layout>

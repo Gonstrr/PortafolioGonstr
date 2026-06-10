@@ -1,6 +1,13 @@
 [
 	{
-		"dates": "Febrero 2025 - Actualidad",
+		"dates": "Abril 2026 - Actualidad",
+		"role": "Mobile Developer",
+		"company": "WOM",
+		"description": "Desarrollo de aplicaciones móviles nativas para Android con Kotlin y Jetpack Compose. Implementación de arquitectura MVVM, integración de APIs REST, y optimización de rendimiento. Trabajo en remoto colaborando con equipos distribuidos en la Región Metropolitana de Santiago.",
+		"logo": "/assets/images/experiences/wom.png"
+	},
+	{
+		"dates": "Febrero 2025 - Marzo 2026",
 		"role": "Mobile Developer",
 		"company": "Banco Santander (42Labs)",
 		"description": "Desarrollo de aplicaciones Android nativas con Kotlin y Jetpack Compose para la nueva App Santander OneApp. Implementación de arquitectura modular MVVM, inyección de dependencias y comunicación entre módulos. Integración de SDKs de seguridad y registro biométrico. Desarrollo de módulos reutilizables e integración de proyectos web con Ionic, Capacitor y Angular. Gestión de pipelines CI/CD con Bitrise, análisis estático con Detekt, y colaboración internacional con equipos distribuidos entre Chile y España.",
@@ -25,14 +32,14 @@
 		"role": "Desarrollador JavaScript – MERN Freelance",
 		"company": "Consultoría ACL Tecnología",
 		"description": "Desarrollo de proyectos web con JavaScript (ES6), nivelandome en javascript, Node.js, Express, MongoDB, Mongoose, React, Redux, Material-UI, Bootstrap, Git-GitHub, entre otros.",
-		"logo": "/assets/images/experiences/jeje.png"
+		"logo": "/assets/images/experiences/freelance.png"
 	},
 	{
 		"dates": "Marzo 2021 · Mayo 2021",
 		"role": "Desarrollador Web Freelance",
 		"company": "Freelance",
 		"description": "Desarrollo de páginas web estáticas y dinámicas con HTML5, CSS3, JavaScript (ES6), Bootstrap, Git-GitHub, entre otros.",
-		"logo": "/assets/images/experiences/jeje.png"
+		"logo": "/assets/images/experiences/freelance.png"
 
 	}
 ]

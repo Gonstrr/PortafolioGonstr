@@ -46,7 +46,7 @@ const sortedPosts = allPosts
 const postsLoop = sortedPosts.slice(0, count).map((post) => {
   return {
     ...(post.data || {}),
-    link: `/post/${post.slug}`,
+    link: `/post/${post.id}`,
   };
 });
 ---

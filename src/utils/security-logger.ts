@@ -166,3 +166,6 @@ declare global {
   const __BUILD_TIME__: string;
   const __SECURE__: boolean;
 }
+
+// Exportar todo para uso en otros módulos
+export default LogsGonstrSecurity;

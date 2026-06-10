@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/post.astro
 title: Desarrollo de Santander OneApp con Kotlin y Jetpack Compose
 description: Mi experiencia desarrollando la nueva aplicación bancaria móvil de Santander utilizando arquitectura modular, MVVM y tecnologías modernas de Android
 dateFormatted: Enero 17, 2025

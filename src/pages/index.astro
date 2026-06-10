@@ -7,82 +7,150 @@ import Layout from "../layouts/main.astro";
 ---
 
 <Layout title="Gonzalo Salas Tranolao">
-  <div
-    class="relative z-20 w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 lg:mt-32 xl:px-0"
-  >
-    <div class="flex flex-col items-center md:flex-row">
-      <div class="relative w-full md:w-1/2">
-        <h1
-          class="mb-5 text-4xl font-bold leading-tight md:text-4xl lg:text-6xl dark:text-white"
-        >
-          Hola, Soy GonstrDev.
-        </h1>
-        <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400 text-justify">
-          Soy un Desarrollador de Software <br
-            class="hidden lg:block "
-          />Con Foco en Areas Web  y Moviles.
-        </p>
-        <p class="mb-2 font-semibold text-neutral-800 dark:text-neutral-200">
-          Puedo ayudarte con:
-        </p>
-        <ul
-          class="py-2 space-y-[3px] text-sm list-disc list-inside text-neutral-500 
-                 dark:text-neutral-400 md:text-base md:space-y-2 md:py-4 "
-        >
-          <li>JavaScript Development</li>
-          <li>Android Development</li>
-          <li>Kotlin Development</li>
-          <li>TypeScript Development</li>
-          <li>React Development</li>
-          <li>Astro Development</li>
-          <li>Tailwind CSS</li>
-          <li>SQL Server</li>
-          <li>Git</li>
-          <li>GitHub</li>
-          
-        </ul>
-        <Button  text="Sigueme en GitHub" link="https://github.com/Gonstrr" />
-      </div>
-      <div
-        class="relative justify-end hidden w-full mt-10 md:flex md:pl-10 md:w-1/2 md:mt-0 md:translate-y-4 xl:translate-y-">
-        <div class="relative z-50 w-full">
-          <div
-            class="absolute bottom-0 z-40 w-16 h-16 -translate-x-6 -translate-y-1/2 lg:top-auto top-0 lg:-translate-y-[330px] rounded-full"
-          >
-            <span
-              class="relative z-20 flex items-center justify-center w-full h-full text-2xl border-8 border-white rounded-full dark:border-neutral-950 bg-neutral-100 dark:bg-neutral-900"
-            >
-              <span
-                class="flex items-center justify-center w-full h-full bg-white border border-dashed 
-                rounded-full dark:bg-neutral-950 border-neutral-300 dark:border-neutral-700"
-                >👋</span
-              >
-            </span>
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-blue-900/20 to-pink-900/20"></div>
+    <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+    
+    <div class="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto py-16">
+      <div class="flex flex-col items-center gap-16 md:flex-row md:items-start lg:gap-20">
+        <!-- Contenido principal -->
+        <div class="flex-1 space-y-8 text-left">
+          <div class="space-y-6">
+            <!-- Badge de presentación Android -->
+            <div class="inline-flex items-center px-6 py-3 text-sm font-bold text-green-700 bg-gradient-to-r from-green-100 to-emerald-100 rounded-full border border-green-300 shadow-lg shadow-green-500/20 animate-pulse">
+              <div class="w-3 h-3 bg-green-500 rounded-full mr-3 animate-ping"></div>
+              <div class="w-2 h-2 bg-green-400 rounded-full mr-3"></div>
+              <span class="tracking-wider uppercase">Senior Android Developer</span>
+            </div>
+            
+            <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-tight bg-gradient-to-r from-cyan-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent drop-shadow-2xl">
+              <span class="inline-block hover:scale-110 transition-transform duration-300">Hola, Soy</span><br/>
+              <span class="inline-block hover:scale-110 transition-transform duration-300">GonstrrDev.</span>
+            </h1>
+
+            <div class="space-y-4">
+              <div class="glass rounded-2xl p-6 max-w-3xl mx-auto bg-gradient-to-br from-slate-900/80 to-purple-900/60 border border-purple-500/30 backdrop-blur-lg">
+                <p class="text-xl text-white leading-relaxed font-medium">
+                  <span class="text-transparent bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text font-bold">Senior Android Developer</span> especializado en 
+                  <span class="text-transparent bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text font-bold">Jetpack Compose</span>, 
+                  <span class="text-transparent bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text font-bold">Clean Architecture</span> y 
+                  <span class="text-transparent bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text font-bold">MVVM</span>.
+                </p>
+                <p class="text-lg text-slate-200 leading-relaxed italic mt-4">
+                  Construyo aplicaciones Android modernas con Kotlin, arquitectura limpia y las mejores prácticas del mercado.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="relative z-30 w-full h-full lg:h-[420px] translate-x-0 translate-y-0 border border-dashed rounded-2xl bg-gradient-to-r dark:from-neutral-950 
-                      dark:via-black dark:to-neutral-950 from-white via-neutral-50 to-white  border-neutral-300 dark:border-neutral-700
-                      border-neutral-300 dark:border-neutral-700 rounded-2xl "> 
-            <img
-              src="../assets/img.jpg"
-              alt="Imagen de portada"
-              loading="eager"
-              decoding="auto"
-              class="relative z-30 w-full max-w-[200px] md:max-w-md mx-auto dark:-translate-y-0.5 object-cover rounded-full"
-            />
+
+          <div class="space-y-6">
+            <div class="flex items-center gap-2 text-xl font-bold text-white drop-shadow-lg">
+              <span class="w-2 h-8 bg-gradient-to-b from-cyan-400 to-purple-400 rounded-full"></span>
+              <span class="text-transparent bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text">Android Stack Moderno:</span>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+              <div class="flex items-center gap-2 px-3 py-2 text-sm font-bold text-white bg-gradient-to-br from-indigo-600/40 to-purple-600/40 border border-indigo-400/60 rounded-lg hover:scale-105 transition-transform backdrop-blur-sm">
+                <span class="text-lg">🎨</span>
+                Jetpack Compose
+              </div>
+              <div class="flex items-center gap-2 px-3 py-2 text-sm font-bold text-white bg-gradient-to-br from-green-600/40 to-emerald-600/40 border border-green-400/60 rounded-lg hover:scale-105 transition-transform backdrop-blur-sm">
+                <span class="text-lg">🤖</span>
+                Kotlin
+              </div>
+              <div class="flex items-center gap-2 px-3 py-2 text-sm font-bold text-white bg-gradient-to-br from-blue-600/40 to-cyan-600/40 border border-blue-400/60 rounded-lg hover:scale-105 transition-transform backdrop-blur-sm">
+                <span class="text-lg">🏗️</span>
+                Clean Architecture
+              </div>
+              <div class="flex items-center gap-2 px-3 py-2 text-sm font-bold text-white bg-gradient-to-br from-purple-600/40 to-pink-600/40 border border-purple-400/60 rounded-lg hover:scale-105 transition-transform backdrop-blur-sm">
+                <span class="text-lg">📱</span>
+                MVVM
+              </div>
+              <div class="flex items-center gap-2 px-3 py-2 text-sm font-bold text-white bg-gradient-to-br from-orange-600/40 to-red-600/40 border border-orange-400/60 rounded-lg hover:scale-105 transition-transform backdrop-blur-sm">
+                <span class="text-lg">⚡</span>
+                Coroutines
+              </div>
+              <div class="flex items-center gap-2 px-3 py-2 text-sm font-bold text-white bg-gradient-to-br from-cyan-600/40 to-blue-600/40 border border-cyan-400/60 rounded-lg hover:scale-105 transition-transform backdrop-blur-sm">
+                <span class="text-lg">💉</span>
+                Hilt
+              </div>
+              <div class="flex items-center gap-2 px-3 py-2 text-sm font-bold text-white bg-gradient-to-br from-pink-600/40 to-purple-600/40 border border-pink-400/60 rounded-lg hover:scale-105 transition-transform backdrop-blur-sm">
+                <span class="text-lg">🗄️</span>
+                Room
+              </div>
+              <div class="flex items-center gap-2 px-3 py-2 text-sm font-bold text-white bg-gradient-to-br from-teal-600/40 to-green-600/40 border border-teal-400/60 rounded-lg hover:scale-105 transition-transform backdrop-blur-sm">
+                <span class="text-lg">🌐</span>
+                Retrofit
+              </div>
+            </div>
           </div>
-          
-          
-          <div
-            class="absolute bottom-0 right-0 z-20 w-full h-full lg:h-[420px] translate-x-0 -translate-y-px border 
-                   border-dashed rounded-2xl bg-gradient-to-r dark:from-neutral-950 dark:via-black dark:to-neutral-950 from-white via-neutral-50 to-white border-neutral-300 dark:border-neutral-700"
-          >
+
+          <div class="flex flex-col gap-4 pt-6 sm:flex-row">
+            <Button text="Ver Proyectos Android" link="/projects" />
+            <Button text="Contactarme" link="https://www.linkedin.com/in/gonzalo-andres-salas-tranolao/" variant="secondary" />
+          </div>
+        </div>
+
+        <!-- Imagen de perfil Android Developer -->
+        <div class="relative hidden md:block flex-1">
+          <div class="relative max-w-md mx-auto">
+            <!-- Badge flotante Android Expert -->
+            <div class="absolute -top-6 -right-6 z-10">
+              <div class="px-4 py-2 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-full shadow-lg flex items-center gap-2">
+                <span class="w-2 h-2 bg-white rounded-full animate-pulse"></span>
+                <span class="text-sm font-bold">Android Expert</span>
+              </div>
+            </div>
+            
+            <!-- Emoji de Android animado -->
+            <div class="absolute -top-8 -left-8 z-10">
+              <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 border-4 border-white rounded-full flex items-center justify-center shadow-lg animate-bounce">
+                <span class="text-2xl">🤖</span>
+              </div>
+            </div>
+
+            <!-- Marcos decorativos Android theme -->
+            <div class="absolute inset-0 border-2 border-dashed border-gradient-to-r from-green-400 to-emerald-400 rounded-3xl transform rotate-3 opacity-60"></div>
+            <div class="absolute inset-0 border-2 border-dashed border-gradient-to-r from-blue-400 to-cyan-400 rounded-3xl transform -rotate-2 opacity-60"></div>
+
+            <!-- Contenedor de imagen mejorado Android -->
+            <div class="relative bg-gradient-to-br from-green-50 via-white to-blue-50 dark:from-green-900/20 dark:via-neutral-800 dark:to-blue-900/20 rounded-3xl p-8 shadow-2xl border border-green-100/50">
+              <!-- Overlay gradient Android -->
+              <div class="absolute inset-0 bg-gradient-to-br from-green-500/10 to-blue-500/10 rounded-3xl"></div>
+              <img
+                src="/assets/images/gatito.jpg"
+                alt="Gonzalo Salas Tranolao - Senior Android Developer"
+                loading="eager"
+                decoding="auto"
+                class="relative w-full h-auto rounded-2xl object-cover shadow-lg border-4 border-white dark:border-neutral-800"
+              />
+            </div>
+            
+            <!-- Stats flotantes Android -->
+            <div class="absolute -bottom-4 -left-4 z-10">
+              <div class="bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-lg shadow-lg px-3 py-2">
+                <div class="text-xs font-medium">Android Experience</div>
+                <div class="text-sm font-black">3+ Years</div>
+              </div>
+            </div>
+            
+            <!-- Additional Android Stats -->
+            <div class="absolute -bottom-4 -right-4 z-10">
+              <div class="bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg shadow-lg px-3 py-2">
+                <div class="text-xs font-medium">Apps Published</div>
+                <div class="text-sm font-black">5+ Apps</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <Separator text="Mira mis proyectos" />
+  <!-- Secciones adicionales -->
+  <Separator text="Proyectos Android" />
   <Projects />
+  <Separator text="Artículos sobre Android" />
   <Writings />
 </Layout>

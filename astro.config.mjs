@@ -5,15 +5,12 @@ import vercel from '@astrojs/vercel';
 // https://astro.build/config
 export default defineConfig({
 	integrations: [tailwind()],
-	output: 'server',
+	output: 'static',
 	adapter: vercel({
 		webAnalytics: {
 			enabled: true
 		}
 	}),
-	legacy: {
-		collections: true
-	},
 	security: {
 		checkOrigin: true
 	},
@@ -22,6 +19,9 @@ export default defineConfig({
 			__SECURE__: true,
 			__BUILD_TIME__: JSON.stringify(new Date().toISOString()),
 			__VERSION__: JSON.stringify("1.0.0-LogsGonstr")
+		},
+		build: {
+			assetsInlineLimit: 4096
 		}
 	}
 });
